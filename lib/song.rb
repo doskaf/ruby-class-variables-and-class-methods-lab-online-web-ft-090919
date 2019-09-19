@@ -8,12 +8,19 @@ class Song
     @@count += 1
     @@genres = []
     @@genres << genre
+    @@artists = []
+    @@artists << artist
   end
   def count
     @@count
   end
   def genres
-    @@genres.each do |genre|
-      if 
+    @@genres.uniq
+  end
+  def artists
+    @@artists.uniq
+  end
+  def genre_count
+    
   end
 end
